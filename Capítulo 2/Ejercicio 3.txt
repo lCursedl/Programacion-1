@@ -1,0 +1,18 @@
+Instrucciones para llegar desde  puerta de departamento a universidad.
+1.-Gira hacia la derecha 90° y camina hacia el pasillo hasta llegar a la puerta.
+2.-Abre la puerta, sal del edificio y estando ya afuera cierra la puerta.
+3.-Gira hacia la izquierda 90° y comienza a caminar sobre la banqueta.
+4.-Al llegar a la primer calle
+	A)Detente en la esquina y asegurate de que el paso peatonal este libre
+	B)Asegurate que el paso de los autos provenientes de la calle a la izquierda se encuentre detenido por el semaforo.
+	C)Si ambos puntos se cumplen, cruza hacia la esquina de enfrente.
+5.-Continua caminando derecho 3 cuadras más, repite el paso 4 en caso de llegar a otra esquina.
+6.-Al haber recorrido 2 cuadras, en la esquina de la última gira 90° hacia la derecha y cruza la calle.
+7.-Al haber terminado de cruzar, gira hacia la izquierda 90° y cruza la calle.
+8.-Al haber terminado de cruzar, gira 90° hacia la derecha y camina 2 cuadras más.
+9.-Al llegar al final de la 2° cuadra, sigue el recorrido de la banqueta hacia la izquierda.
+10.-Al llegar a la nueva esquina, cruza la calle hacia la esquina de enfrente, cuidando el paso de los autos.
+11.-Repite el paso 10 una ves más.
+12.-Sigue la dirección de la banqueta hacia la derecha y detente hasta llegar a un edificio azul con portón blanco.
+13.-Presiona el timbre colocado a la derecha del portón y espera hasta que la puerta se abra.
+14.Al momento de abrirse, jala la puerta para abrir, introducete al edificio y jala la puerta para cerrarla.

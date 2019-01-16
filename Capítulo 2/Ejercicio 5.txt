@@ -1,0 +1,42 @@
+Definición de terminos.
+C++
+	Lenguaje de programación basado en C, considerado de medio/bajo nivel.
+comment
+	Linea de texto que se define al escribir "//". Todos los caracteres despues de estos son ignorados por el compilador.
+compiler
+	Programa que se encarga de traducir el codigo fuente a codigo máquina para despues generar un archivo ejecutable.
+compile-time error
+	Errores que se encuentran en la fase de compilación, tales como errores de sintaxis, gramática y ortografía en las
+	palabras reservadas del lenguaje, genera un codigo objeto.
+cout
+	Función perteneciente a la biblioteca "iostream", se utiliza para operaciones de salida de caracteres.
+executable
+	Archivo empaquetado, resultado del enlace de codigo objeto(.obj) del programa y de las librerías utilizadas.
+function
+	Instrucción que tiene un tipo y nombre, sirve para indicar las acciones a realizar por el programa.
+header
+	Archivo de codigo fuente el cual puede contener diversas declaraciones para ser usadas en un futuro, asi como otros
+	encabezados.
+IDE
+	Entorno de Desarrollo Interactivo, el cual se utiliza para mantener los archivos de los programas unidos, así como
+	integrar un compilador y enlazador, entre otras herramientas.
+#include
+	Instrucción reservada por el lenguaje, sirve para indicar que se mandará a llamar una librería.
+library
+	Conjunto de variables, declaraciones y funciones las cuales se vuelven disponibles al agregar la librería al programa.
+linker
+	
+main()
+	Funcion principal que todo programa de C++ debe tener, ya que marca el punto de entrada.
+object code
+	Resultado de la compilación, el cual se enlaza con otros codigos objeto para crear el archivo ejectuable.
+output
+	Salida/resultado proveniente de un programa o función.
+program
+	Resultado de un conjunto de instrucciones que sirven para indicar los pasos requeridos para realizar una acción un
+	obtener ciertos resultados.
+source code
+	Codígo el cual es creado por el programador, donde indica las instrucciones necesarias para conformar el programa.
+	En C++, se encuentran dentro de archivos .cpp.
+statement
+	Linea que indica una o varias acciones a realizar.
