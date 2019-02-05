@@ -119,7 +119,34 @@ void Ejercicio6()
 
 void Ejercicio7()
 {
-
+	double a;
+	double b;
+	double c;
+	double x1;
+	double x2;
+	cout << "Resolucion de ecuaciones de segundo grado (ax^2 + bx + c = 0)\n";
+	cout << "Introuzca el valor de a: ";
+	cin >> a;
+	cout << "Introduzca el valor de b: ";
+	cin >> b;
+	cout << "Introduzca el valor de c: ";
+	cin >> c;
+	x1 = pow(b, 2);
+	x2 = pow(b, 2);
+	x1 = x1 - (4 * a * c);
+	x2 = x2 - (4 * a * c);
+	if (x1 < 0 || x2 < 0)
+	{
+		error("Resultado de operacion (b^2 * 4ac) menor a 0.");
+	}
+	x1 = sqrt(x1);
+	x2 = sqrt(x2);
+	x1 = -b + x1;
+	x2 = -b - x2;
+	x1 /= (2 * a);
+	x2 /= (2 * a);
+	cout << x1 << " " << x2;
+	cin.ignore();
 }
 
 void Ejercicio8()
@@ -308,9 +335,68 @@ void Ejercicio12y13()
 	cin.ignore();
 }
 
+void Ejercicio14()
+{
+	vector <int> Week(7, 0);
+	int Reject = 0;
+	string Day;
+	int Value;
+	bool GetValues = true;
+	cout << "Introduzca \"dia de la semana - numero\" para realizar una sumatoria.\nIntroduzca \"SinDia - -1\" para indicar el fin.\n";
+	while (GetValues)
+	{
+		cin >> Day >> Value;
+		if (Day == "Lunes" || Day == "Lun" || Day == "lunes")
+		{
+			Week[0] = Value;
+		}
+		else if (Day == "Martes" || Day == "Mar" || Day == "martes")
+		{
+			Week[1] = Value;
+		}
+		else if (Day == "Miercoles" || Day == "Mier" || Day == "miercoles")
+		{
+			Week[2] = Value;
+		}
+		else if (Day == "Jueves" || Day == "Jue" || Day == "jueves")
+		{
+			Week[3] = Value;
+		}
+		else if (Day == "Viernes" || Day == "Vie" || Day == "viernes")
+		{
+			Week[4] = Value;
+		}
+		else if (Day == "Sabado" || Day == "Sab" || Day == "sabado")
+		{
+			Week[5] = Value;
+		}
+		else if (Day == "Domingo" || Day == "Dom" || Day == "domingo")
+		{
+			Week[6] = Value;
+		}
+		else if (Day == "SinDia" || Day == "Sindia" || Day == "sindia")
+		{
+			GetValues = false;
+			Value = 0;
+		}
+		else
+		{
+			cout << "\nDia introducido no reconocido, intente de nuevo\n";
+			Reject++;
+		}
+	}
+	for (int i = 0; i < Week.size(); i++)
+	{
+		Value += Week[i];
+	}
+	cout << "Suma de todos los valores: " << Value << ".\n";
+	cout << "Cantidad de valores rechazados:" << Reject << ".\n";
+	cin.ignore();
+}
+
 int main()
 {
-	Ejercicio12y13();
+	Ejercicio14();
 	cin.get();
 	return 0;
 }
