@@ -12,6 +12,54 @@ bool CheckPrime(int num, vector<int> VecNum)
 	return true;
 }
 
+int CheckText(string s)
+{
+	if (s == "Cero" || s == "cero" || s == "0")
+	{
+		return 0;
+	}
+	else if (s == "Uno" || s == "uno" || s == "1")
+	{
+		return 1;
+	}
+	else if (s == "Dos" || s == "dos"|| s == "2")
+	{
+		return 2;
+	}
+	else if (s == "Tres" || s == "tres" || s == "3")
+	{
+		return 3;
+	}
+	else if (s == "Cuatro" || s == "cuatro" || s == "4")
+	{
+		return 4;
+	}
+	else if (s == "Cinco" || s == "cinco" || s == "5")
+	{
+		return 5;
+	}
+	else if (s == "Seis" || s == "seis" || s == "6")
+	{
+		return 6;
+	}
+	else if (s == "Siete" || s == "siete" || s == "7")
+	{
+		return 7;
+	}
+	else if (s == "Ocho" || s == "ocho" || s == "8")
+	{
+		return 8;
+	}
+	else if (s == "Nueve" || s == "nueve" || s == "9")
+	{
+		return 9;
+	}
+	else
+	{
+		return -1;
+	}
+}
+
 void Ejercicio3()
 {
 	vector <double> Distances;
@@ -171,6 +219,46 @@ void Ejercicio6()
 	{
 		cout << "9\n";
 	}
+	cin.ignore();
+}
+
+void Ejercicio7()
+{
+	int num1;
+	int num2;
+	string LetterNumber;
+	char operation;
+	cout << "Introduzca un numero\n";
+	cin >> LetterNumber;
+	num1 = CheckText(LetterNumber);
+	cout << "Introduzca otro numero.\n";
+	cin >> LetterNumber;
+	num2 = CheckText(LetterNumber);
+	cout << "Introduzca la operacion a realizar (+, -, *, /)\n";
+	cin >> operation;
+	if (num1 != -1 && num2 != -1)
+	{
+		if (operation == '+')
+		{
+			cout << "La suma de " << num1 << " y " << num2 << " es " << num1 + num2 << ".\n";
+		}
+		else if (operation == '-')
+		{
+			cout << "La resta de " << num1 << " menos " << num2 << " es " << num1 - num2 << ".\n";
+		}
+		else if (operation == '*')
+		{
+			cout << "La mulriplicacion de " << num1 << " por " << num2 << " es " << num1 * num2 << ".\n";
+		}
+		else if (operation == '/')
+		{
+			cout << "La division de " << num1 << " entre " << num2 << " es " << num1 / num2 << ".\n";
+		}
+	}
+	else
+	{
+		cout << "Se introdujo un valor no valido.\n";
+	}	
 	cin.ignore();
 }
 

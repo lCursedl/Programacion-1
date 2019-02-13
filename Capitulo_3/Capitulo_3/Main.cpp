@@ -124,6 +124,97 @@ void Drill()
 	cin.ignore();
 }
 
+void Ejercicio2()
+{
+	double Input;
+	double Output;
+	cout << "Introduzca una cantidad en millas para convertir a Km: ";
+	cin >> Input;
+	Output = 1.609 * Input;
+	cout << "Km = " << Output;
+	cin.ignore();
+}
+
+void Ejercicio4()
+{
+	int val1, val2;
+	int suma, resta1, resta2, mul, div1, div2;
+	cout << "Introduzca 2 numeros enteros para realizar operaciones.\n\tValor 1: ";
+	cin >> val1;
+	cout << "\n\tValor 2: ";
+	cin >> val2;
+	if (val1 >= val2)
+	{
+		cout << "Valor mayor: " << val1 << "\n";
+		cout << "Valor menor: " << val2 << "\n";
+	}
+	else
+	{
+		cout << "Valor mayor: " << val2 << "\n";
+		cout << "Valor menor: " << val1 << "\n";
+	}
+	suma = val1 + val2;
+	resta1 = val1 - val2;
+	resta2 = val2 - val1;
+	mul = val1 * val2;
+	div1 = val1 / val2;
+	div2 = val2 / val1;
+
+	cout << "Suma: " << suma << ".\nResta " << val1 << " - " << val2 << ": " << resta1 << ".\n";
+	cout << "Multiplicacion: " << mul << ".\nDivision " << val1 << " / " << val2 << ": " << div1 << ".\n";
+	cout << "Division " << val2 << " / " << val1 << ": " << div2 << ".\n";
+	cin.ignore();
+}
+
+void Ejercicio5()
+{
+	double val1, val2;
+	double suma, resta1, resta2, mul, div1, div2;
+	cout << "Introduzca 2 numeros con punto flotante para realizar operaciones.\n\tValor 1: ";
+	cin >> val1;
+	cout << "\n\tValor 2: ";
+	cin >> val2;
+	if (val1 >= val2)
+	{
+		cout << "Valor mayor: " << val1 << "\n";
+		cout << "Valor menor: " << val2 << "\n";
+	}
+	else
+	{
+		cout << "Valor mayor: " << val2 << "\n";
+		cout << "Valor menor: " << val1 << "\n";
+	}
+	suma = val1 + val2;
+	resta1 = val1 - val2;
+	resta2 = val2 - val1;
+	mul = val1 * val2;
+	div1 = val1 / val2;
+	div2 = val2 / val1;
+
+	cout << "Suma: " << suma << ".\nResta " << val1 << " - " << val2 << ": " << resta1 << ".\n";
+	cout << "Multiplicacion: " << mul << ".\nDivision " << val1 << " / " << val2 << ": " << div1 << ".\n";
+	cout << "Division " << val2 << " / " << val1 << ": " << div2 << ".\n";
+	cin.ignore();
+}
+
+void Ejercicio6()
+{
+	int val1, val2, val3;
+	cout << "Introduzca 3 valores separados por espacios: ";
+	cin >> val1 >> val2 >> val3;
+	if (val1 >= val2)
+	{
+		if (val1 > val3)
+		{
+
+		}
+		else if (val2 > val3)
+		{
+
+		}
+	}
+}
+
 int main()
 {
 	Drill();

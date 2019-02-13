@@ -152,6 +152,7 @@ void Ejercicio7()
 void Ejercicio8()
 {
 	int iAmount;
+	string sinput;
 	vector <int> vNum;
 	int input = 0;
 	bool getInput = true;
@@ -159,12 +160,13 @@ void Ejercicio8()
 
 	cout << "Introduzca el numero de valores a sumar: ";
 	cin >> iAmount;
-	cout << "Porfavor introduzca algunos numeros (introduzca \"|\" para parar).";
+	cout << "Porfavor introduzca algunos numeros enteros (introduzca \"|\" para parar).\n";
 	while (getInput)
 	{
-		cin >> input;
-		if (input != 0)
+		cin >> sinput;
+		if (sinput != "|")
 		{
+			input = stoi(sinput);
 			vNum.push_back(input);
 		}
 		else
@@ -172,7 +174,7 @@ void Ejercicio8()
 			getInput = false;
 		}
 	}
-	if (iAmount >= vNum.size())
+	if (iAmount > vNum.size())
 	{
 		error("La cantidad de numeros solicitados es mayor a la existente.");
 	}
@@ -181,6 +183,51 @@ void Ejercicio8()
 		numSum += vNum[i];
 	}
 	cout << "La suma de los " << iAmount <<" primeros numeros es " << numSum << ".";
+	cin.ignore();
+}
+
+void Ejercicio10()
+{
+	int iAmount;
+	string sinput;
+	vector <double> vNum;
+	vector <double> vRest;
+	double input;
+	bool getInput = true;
+	double numSum = 0.0;
+	double numRes = 0.0;
+
+	cout << "Introduzca el numero de valores a sumar: ";
+	cin >> iAmount;
+	cout << "Porfavor introduzca algunos numeros con punto flotante (introduzca \"|\" para parar).\n";
+	while (getInput)
+	{
+		cin >> sinput;
+		if (sinput != "|")
+		{
+			input = stod(sinput);
+			vNum.push_back(input);
+		}
+		else
+		{
+			getInput = false;
+		}
+	}
+	if (iAmount > vNum.size())
+	{
+		error("La cantidad de numeros solicitados es mayor a la existente.");
+	}
+	for (int i = 0; i < iAmount; i++)
+	{
+		numSum += vNum[i];
+	}
+	for (int i = 0; i < (iAmount - 1); i++)
+	{
+		numRes -= vNum[i];
+		cout << numRes << "\n";
+		vRest.push_back(numRes);
+	}
+	cout << "La suma de los " << iAmount << " primeros numeros es " << numSum << ".";
 	cin.ignore();
 }
 
@@ -396,7 +443,17 @@ void Ejercicio14()
 
 int main()
 {
-	Ejercicio14();
+	try
+	{
+		Ejercicio10();
+	}
+	catch (runtime_error & e)
+	{
+		cerr << "runtime error: " << e.what() << '\n';
+		cin.ignore();
+		cin.get();
+		return -1;
+	}
 	cin.get();
 	return 0;
 }
