@@ -287,20 +287,26 @@ void UserOperations(int SelectControl, vector<CGroup>GroupContainer, vector<CStu
 			for (int i = 0; i < GroupContainer.size(); i++)
 			{
 				FileName = GroupContainer[i].GiveFName();
-				std::fstream File;
-				File.open(FileName, std::ios_base::out | std::ios_base::trunc);
+				std::fstream* mFile = new std::fstream();
+				//std::fstream File;
+				mFile->open(FileName, std::ios_base::out | std::ios_base::trunc);
+				//File.open(FileName, std::ios_base::out | std::ios_base::trunc);
 				for (int j = 0; j < GroupContainer[i].m_Students.size(); j++)
 				{
 					if (j != GroupContainer[i].m_Students.size() - 1)
 					{
-						File << GroupContainer[i].m_Students[j].GetData(true);
+						*mFile << GroupContainer[i].m_Students[j].GetData(true);
+						//File << GroupContainer[i].m_Students[j].GetData(true);
 					}
 					else
 					{
-						File << GroupContainer[i].m_Students[j].GetData(false);
+						*mFile << GroupContainer[i].m_Students[j].GetData(false);
+						//File << GroupContainer[i].m_Students[j].GetData(false);
 					}
 				}
-				File.close();
+				mFile->close();
+				//File.close();
+				delete mFile;
 			}
 			std::fstream File;
 			File.open("alumnos.txt", std::ios_base::out | std::ios_base::trunc);
